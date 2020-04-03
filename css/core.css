@@ -1,0 +1,171 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.7em;
+    color: #444444;
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+label {
+    color: #137a43;
+}
+
+
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+
+
+/*
+ * HEADER AND MAIN NAV
+ */
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu {
+    background: #305a43;
+}
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+    padding: 0.5em;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #ccdddd;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #ffffff;
+}
+
+.home-menu .pure-menu-link {
+    padding: 1em 0.2em;
+}
+
+
+/*
+ * CONTENT GENERICS
+ */
+
+.content {
+    padding: 1em 1em 3em;
+}
+.content h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
+
+.ribbon {
+    background: #044c26;
+    color: #aaa;
+}
+.ribbon h2 {
+    color: white;
+}
+
+.footer {
+    color: #999999;
+    background: #333333;
+    width: 100%;
+}
+
+
+/*
+ * SPECIFIC CONTENT
+ */
+
+.banner.content {
+    background: #044c26;
+    width: 100%;
+    padding: 0;
+    height: 20em;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+}
+.banner img {
+    width: 100%;
+    position: absolute;
+    top: 4.5em;
+}
+
+
+/*
+ * TABLET (AND UP) MEDIA QUERIES
+ */
+@media (min-width: 48em) {
+    body {
+        font-size: 1.1em;
+    }
+
+    .home-menu {
+        text-align: left;
+    }
+    .home-menu .pure-menu-heading {
+        padding: 0.5em 1em;
+    }
+    .home-menu ul {
+        float: right;
+    }
+    .home-menu .pure-menu-link {
+        padding: 1em;
+    }
+
+    .l-box-lrg {
+        border: none;
+    }
+
+    .banner.content {
+        height: 30em;
+    }
+    .banner img {
+        top: 2em;
+    }
+
+}
+
+/*
+ * DESKTOP (AND UP) MEDIA QUERIES
+ */
+@media (min-width: 78em) {
+    .banner img {
+        top: -50%;
+    }
+
+}

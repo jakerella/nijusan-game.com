@@ -1,0 +1,37 @@
+{
+  "name": "nijusan-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The website for a game called Ni-ju-san",
+  "main": "index.html",
+  "scripts": {
+    "clean": "rm -rf build/",
+    "build": "mkdir -p build/css && mkdir -p build/images && cp *.html build/ && cp css/* build/css/ && cp images/* build/images/ && cp node_modules/purecss/build/pure-min.css build/css/",
+    "serve": "http-server build/",
+    "postinstall": "npm run-script clean; npm run-script build",
+    "watch": "npm-watch build"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "css/**/*.*",
+        "images/**/*.*",
+        "index.html"
+      ],
+      "delay": 1000
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakerella/nijusan-game.com.git"
+  },
+  "author": "Jordan Kasper",
+  "license": "MIT",
+  "dependencies": {
+    "purecss": "^1.0.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "npm-watch": "^0.6.0"
+  }
+}
