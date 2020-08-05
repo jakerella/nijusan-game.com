@@ -31,7 +31,7 @@
     "purecss": "^1.0.1"
   },
   "devDependencies": {
-    "http-server": "^0.12.1",
+    "http-server": "^0.12.3",
     "npm-watch": "^0.6.0"
   }
 }
